@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .then(data => {
                 const country = data[0];
-                console.log(country)
                 capital.textContent= country.capital[0];
                 population.textContent= country.population.toLocaleString();
                 regionEl.textContent= country.region;
